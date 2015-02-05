@@ -21,7 +21,7 @@ class(data$Time)
 data$DateTime <- as.POSIXct(paste(data$Date, data$Time))
 
 #create the plot 4
-png(file = "plot4.png",width = 480, height = 480) ## Open PNG device; create 'plot4.pdf' in working directory
+png(file = "plot4.png",width = 480, height = 480) ## Open PNG device; create 'plot4.png' in working directory
 ## Create plot and send to a file (no plot appears on screen)
 # divide the plot device into four subplots
 par(mfrow = c(2,2))
