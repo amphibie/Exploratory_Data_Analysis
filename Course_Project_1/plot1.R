@@ -20,4 +20,4 @@ hist(data$Global_active_power, main = paste("Global Active Power"), xlab = "Glob
 
 #Copy to a PNG-File
 dev.copy(png, file = "plot1.png",width = 480, height = 480) ## Copy my plot to a PNG file
-dev.off() ## Don't forget to close the PNG device!
+dev.off() ## close the PNG device

@@ -23,4 +23,4 @@ data$DateTime <- as.POSIXct(paste(data$Date, data$Time))
 plot(data$DateTime, data$Global_active_power, type= "l", lwd=1, ylab= "Global Active Power (kilowatts)", xlab="")
 #Copy to a PNG-File
 dev.copy(png, file = "plot2.png",width = 480, height = 480) ## Copy my plot to a PNG file
-dev.off() ## Don't forget to close the PNG device!
+dev.off() ## close the PNG device
