@@ -1,4 +1,6 @@
-#Downloading File
+getwd()
+#Das Arbeitsverzeichnis auf  "C:/Users/Paul/Weiterbildung/Data Science/Exploratory Data Analysis/Course Project/1"
+#setzen !!!
 dataset_url <- "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"
 download.file(dataset_url, "exdata_data_household_power_consumption.zip")
 unzip("exdata_data_household_power_consumption.zip", exdir = "exdata_data_household_power_consumption")
@@ -7,7 +9,6 @@ list.files("exdata_data_household_power_consumption")
 #list.files mit dem Argument full.names=TRUE gibt den Filenamen und den Pfad dorthin vom arbeitsverzeichnis aus
 file <- list.files("exdata_data_household_power_consumption", full.names=TRUE)
 
-#Reading File in R
 data<- read.table(file, sep=";", header=T, quote= "", strip.white=TRUE, stringsAsFactors = F, na.strings= "?")
 dim(data)
 # Subsetting the full data to obtain the data related to two days: 
